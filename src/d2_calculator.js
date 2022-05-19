@@ -4,22 +4,22 @@ import './main.css';
 import {evaluate} from "mathjs";
 let calcArr = [];
 const App = () => {
-  const names = [
-  {
-    fname: "John",
-    lname: "Jackson"
-  },
-  {
-    fname: "Jorge",
-    lname: "Joestar"
-  }
-  ]
+  // const names = [
+  // {
+  //   fname: "John",
+  //   lname: "Jackson"
+  // },
+  // {
+  //   fname: "Jorge",
+  //   lname: "Joestar"
+  // }
+  // ]
 
-  const handleClick = (firstName , index) => {
-    console.log(`I am at ${index} position and my name is ${firstName}`);
-    console.log(names[index]);
-    // let oldArr = [...names]
-  }
+  // const handleClick = (firstName , index) => {
+  //   console.log(`I am at ${index} position and my name is ${firstName}`);
+  //   console.log(names[index]);
+  //   // let oldArr = [...names]
+  // }
 
   // activity - calculator
   const calc = [ "7", "8", "9", "C", "4", "5", "6", "*", "1", "2" , "3" , "/", "+", "0", "-", "="];
@@ -74,16 +74,16 @@ const App = () => {
 
   return (
       <div>
-
-          {names.map((personsInfo, index) => { // index lets you target specific elements or divs...
+          
+          {/* {names.map((personsInfo, index) => { // index lets you target specific elements or divs...
             return  (
               <div key = {index}>
                 <h1>"I" am {personsInfo.fname} {personsInfo.lname}</h1>
                 <h2>Person {index + 1}</h2>
                 <button onClick={() => handleClick(personsInfo.fname, index)}>Who am I</button>
-                {/* <button>DELETE ME</button> */}
+                <button>DELETE ME</button>
               </div>)
-          })}
+          })} */}
       
 
           {/** activity - calculator **/}

@@ -37,7 +37,9 @@
 }
 
 /* ----------------------------------- */
-
+body {
+  background-color: #965fc7;
+}
 .calc-heading {
   text-align: center;
 }
