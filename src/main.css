@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 0.5s linear;
+  }
+}
+/* .App-logo:hover {
+  animation: App-logo-spin infinite 0.200s linear;
+} */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-link:hover {
+  color:green;
+  cursor: pointer;
+}
+
+/* ----------------------------------- */
+
+.calc-heading {
+  text-align: center;
+}
+.airbnb-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.airbnb-container a{
+  color:#282c34;
+  
+}
+a:link { text-decoration: none;}
+a:visited { text-decoration: none; }
+a:hover { color:#046dffee }
+a:active { text-decoration: none; }
+
+.airbnb-container img {
+  -webkit-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;
+  border-radius: 3%;
+}
+.airbnb-container img:hover {
+  animation: App-logo-spin infinite 1s linear
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+.button-count {
+  display: flex;
+  justify-content: center;
+}
+
+.number-count {
+  font-size: 150%;
+}
+/* --------------------------calc */
+
+body {
+  padding-bottom: 10px;
+}
+.button {
+  padding: 0px 29px;
+  /* border: 2px solid red; */
+  /* background-color: #ffffff; */
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+/* .button:hover {
+  background-color: darkslategray;
+} */
+
+/* .button:active {
+  box-shadow: 0 2px #bface7; 
+  transform: translatey(4px);
+} */
+
+.calculator-container {
+  max-width: 300px;
+  margin: 10vh auto 0 auto;
+  box-shadow: 0px 0px 23px 20px rgba(153,153,153,1);
+}
+
+
+.display {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+  background-color: #2b2b2b;
+  color:white
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-grow: 2; */
+  /* display: grid;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid#999;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+
+/* .buttons > div {
+  border-top: 1px solid #999;
+  border-right: 1px solid#999;
+} */
+
+.button {
+  border: 0.5px solid #999999;
+  line-height: 100px;
+  text-align: center;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2b2b2b;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+#equal {
+  background-color: #5555ff;
+  color: white;
+}
+
+#equal:hover {
+  background-color: #2434e1;
+}
+
+.operator {
+  background-color: orange;
+}
+
+.operator:hover {
+  background-color: #c68b13;
+}
